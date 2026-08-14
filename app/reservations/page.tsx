@@ -55,7 +55,8 @@ function SweetsReservations({ colors, lang }: { colors: any, lang: 'de' | 'en' }
 
   return (
     <div className={`min-h-[calc(100vh-73px)] ${colors.bg} relative p-4 md:p-16 flex flex-col items-center justify-center`}>
-      <div className="absolute inset-0 bg-[radial-gradient(#000_2px,transparent_0)] bg-[length:20px_20px] md:bg-[length:30px_30px] opacity-10 z-0 pointer-events-none"></div>
+      {/* INCREASED OPACITY HERE (was opacity-10, now opacity-40) */}
+      <div className="absolute inset-0 bg-[radial-gradient(#000_2px,transparent_0)] bg-[length:20px_20px] md:bg-[length:30px_30px] opacity-40 z-0 pointer-events-none"></div>
 
       <div className="relative z-10 w-full max-w-2xl flex flex-col items-center py-10">
         <h1 className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-8 md:mb-12 text-white drop-shadow-[4px_4px_0_rgba(0,0,0,1)] md:drop-shadow-[8px_8px_0_rgba(0,0,0,1)] text-center">
@@ -89,7 +90,8 @@ function GrillReservations({ colors, lang }: { colors: any, lang: 'de' | 'en' })
 
   return (
     <div className={`min-h-[calc(100vh-73px)] ${colors.bg} relative p-4 md:p-16 flex flex-col items-center justify-center`}>
-      <div className="absolute inset-0 bg-[radial-gradient(#000_2px,transparent_0)] bg-[length:20px_20px] md:bg-[length:30px_30px] opacity-20 z-0 pointer-events-none"></div>
+      {/* INCREASED OPACITY HERE (was opacity-20, now opacity-50) */}
+      <div className="absolute inset-0 bg-[radial-gradient(#000_2px,transparent_0)] bg-[length:20px_20px] md:bg-[length:30px_30px] opacity-50 z-0 pointer-events-none"></div>
 
       <div className="relative z-10 w-full max-w-3xl flex flex-col items-center py-10">
         <h1 className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-8 md:mb-12 text-white drop-shadow-[4px_4px_0_rgba(0,0,0,1)] md:drop-shadow-[8px_8px_0_rgba(0,0,0,1)] text-center">
@@ -151,7 +153,6 @@ function GrillReservations({ colors, lang }: { colors: any, lang: 'de' | 'en' })
                 <input type="number" placeholder={text.estGuests} className="border-[2px] md:border-[3px] border-black p-3 md:p-4 text-sm md:text-base font-bold uppercase focus:outline-none focus:ring-4 ring-[#FF5A1F] text-black placeholder:text-black/50" />
               </div>
               
-              {/* FIXED REACT WARNING HERE: Using defaultValue="" instead of selected on option */}
               <select defaultValue="" className="border-[2px] md:border-[3px] border-black p-3 md:p-4 text-sm md:text-base font-bold uppercase focus:outline-none focus:ring-4 ring-[#FF5A1F] text-black bg-white">
                 <option value="" disabled>{text.eventType}</option>
                 <option value="corporate">{text.eventCorp}</option>
