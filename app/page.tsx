@@ -19,7 +19,7 @@ function SweetsHome({ data, content, language }: { data: any, content: any, lang
       {/* HERO SECTION */}
       <div className={`relative w-full h-[calc(100dvh-130px)] min-h-[500px] md:min-h-[550px] border-b-[3px] border-black ${data.colors.bg} px-4 py-4 flex flex-col items-center justify-center overflow-hidden`}>
 
-        {/* NEW: Dotted Background Overlay for global consistency */}
+        {/* Dotted Background Overlay */}
         <div className="absolute inset-0 bg-[radial-gradient(#000_2px,transparent_0)] bg-[length:20px_20px] md:bg-[length:30px_30px] opacity-15 z-0 pointer-events-none"></div>
 
         {/* Quirks: Ambient color blobs for depth */}
@@ -153,10 +153,11 @@ function SweetsHome({ data, content, language }: { data: any, content: any, lang
 // GRILL BRAND HOME
 // ==========================================
 function GrillHome({ data, content, language }: { data: any, content: any, language: string }) {
+  // NEW: Updated to high-quality Fried Chicken / Grill photos
   const images = [
-    "https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=800&auto=format&fit=crop"
+    "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1569691899455-88464f6d3ab1?q=80&w=800&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1598514982205-f36b96d1e8d4?q=80&w=800&auto=format&fit=crop"
   ];
 
   return (
@@ -165,8 +166,8 @@ function GrillHome({ data, content, language }: { data: any, content: any, langu
       {/* HERO SECTION */}
       <div className={`relative w-full h-[calc(100dvh-130px)] min-h-[500px] md:min-h-[550px] border-b-[3px] border-black ${data.colors.bg} px-4 py-4 flex flex-col items-center justify-center overflow-hidden`}>
         
-        {/* NEW: Dotted Background Overlay */}
-        <div className="absolute inset-0 bg-[radial-gradient(#000_2px,transparent_0)] bg-[length:20px_20px] md:bg-[length:30px_30px] opacity-15 z-0 pointer-events-none"></div>
+        {/* Dotted Background Overlay */}
+        <div className="absolute inset-0 bg-[radial-gradient(#000_2px,transparent_0)] bg-[length:20px_20px] md:bg-[length:30px_30px] opacity-20 z-0 pointer-events-none"></div>
 
         {/* Quirks: Welcome Badge */}
         <div className="absolute top-4 left-4 md:top-8 md:left-8 bg-blue-600 text-white font-bold px-4 md:px-6 py-1.5 md:py-2 border-[2px] md:border-[3px] border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] z-30 transform -rotate-3 text-xs md:text-base hidden sm:block">
@@ -239,9 +240,10 @@ function GrillHome({ data, content, language }: { data: any, content: any, langu
         </div>
       </div>
 
-      {/* MASSIVE QUOTE SECTION */}
-      <div className="w-full min-h-[50dvh] md:min-h-[60vh] bg-white relative overflow-hidden flex flex-col items-center justify-center py-16 md:py-20 px-4 md:px-6">
-        <div className="absolute inset-0 bg-[radial-gradient(#d4d4d4_2px,transparent_0)] bg-[length:20px_20px] md:bg-[length:30px_30px] opacity-60 z-0 pointer-events-none"></div>
+      {/* MASSIVE QUOTE SECTION - NEW: Grill themed colors */}
+      <div className="w-full min-h-[50dvh] md:min-h-[60vh] bg-[#FFF5F0] relative overflow-hidden flex flex-col items-center justify-center py-16 md:py-20 px-4 md:px-6">
+        {/* NEW: Dotted grid now perfectly matches the Orange Brand Accent */}
+        <div className="absolute inset-0 bg-[radial-gradient(#FF5A1F_2px,transparent_0)] bg-[length:20px_20px] md:bg-[length:30px_30px] opacity-20 z-0 pointer-events-none"></div>
 
         <div className="z-10 flex flex-col items-center text-center max-w-4xl px-2 md:px-4">
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter leading-[0.9] text-black mb-8 md:mb-12">
